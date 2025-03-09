@@ -1,4 +1,3 @@
-```markdown
 # Personal Portfolio Website
 
 Welcome to my personal portfolio website! This project is built using HTML and CSS to showcase my skills, projects, and experiences in a clean, user-friendly layout.
@@ -56,6 +55,3 @@ This project is licensed under the [MIT License](LICENSE).
 ## Acknowledgments
 - **Open-Source Community:** Thanks to the many resources and libraries available to developers.
 - **Feedback:** Special thanks to everyone who has provided feedback and support throughout the development process.
-```
-
-Simply copy the above markdown and paste it into your README file. Be sure to replace `"your-username"` with your actual GitHub username and adjust any details to better fit your project.
