@@ -395,28 +395,10 @@ footer a{
         display: none;
      }
       
-     .menu-toggle {
-        display: inline;
-        font-size: 35px;
-        background: transparent;
-        border: none;
-        color: white;
-        padding: 0;
-        margin-top:-2px;
-        background-color: transparent;
-        transition: none;
-        box-shadow: none;
+     details summary{
+        list-style: none;
+        font-size: 2rem;
      }
-
-     .menu-toggle:hover{
-        transform: none;
-        box-shadow: none;
-     }
-
-     .menu-toggle:focus:hover{
-         background-color: transparent;
-     }
-     
      #home{
         flex-direction: column;
      }
@@ -435,6 +417,7 @@ footer a{
      }
 
      .left h1{
+        margin: 0;
         font-size: 1.8rem;
      }
 
