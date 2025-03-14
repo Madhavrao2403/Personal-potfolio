@@ -489,8 +489,8 @@ footer a{
         gap:30px;
     }
     .project-flex .proj-card{
-        width: 85vw;
-        height: 50vh;
+        width: 90%;
+        height: 50%;
     }
 
     #projects{
