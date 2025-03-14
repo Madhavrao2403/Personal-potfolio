@@ -382,3 +382,73 @@ footer a{
     text-decoration: none;
     color:#00d4ff
 }
+
+@media screen and (max-width:768px){
+     header{
+      box-sizing: border-box;
+     }
+
+     nav{
+        display: none;
+     }
+      
+     .menu-toggle {
+        font-size: 35px;
+        background: transparent;
+        border: none;
+        color: white;
+        padding: 0;
+        margin-top:-2px;
+        background-color: transparent;
+        transition: none;
+        box-shadow: none;
+     }
+
+     .menu-toggle:hover{
+        transform: none;
+        box-shadow: none;
+     }
+
+     .menu-toggle:focus:hover{
+         background-color: transparent;
+     }
+     
+     #home{
+        flex-direction: column;
+     }
+    
+     .right{
+        order: -1;
+     }
+
+     #profile_img{
+        width: 250px;
+        height: 250px;
+     }
+
+     .left h2{
+        font-size: 1.5rem;
+     }
+
+     .left h1{
+        font-size: 1.8rem;
+     }
+
+     .left p{
+        font-size: 1rem;
+     }
+      
+     .links{
+        gap:40px;
+     }
+
+     .links svg{
+        width: 42px;
+        height: 42px;
+     }
+
+     .select_button button{
+        width: 44%;
+     }
+
+}
