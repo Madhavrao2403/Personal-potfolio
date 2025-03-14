@@ -11,6 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 @keyframes fadeInUp {
     0% {
       transform: translateY(100%);
@@ -382,8 +383,10 @@ footer a{
     text-decoration: none;
     color:#00d4ff
 }
-
-.menu-toggle{
+details{
+    display: none;
+}
+details{
     display: none;
 }
 @media screen and (max-width:768px){
@@ -394,7 +397,9 @@ footer a{
      nav{
         display: none;
      }
-      
+      details{
+        display: inline;
+      }
      details summary{
         list-style: none;
         font-size: 2rem;
