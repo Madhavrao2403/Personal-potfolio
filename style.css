@@ -383,6 +383,9 @@ footer a{
     color:#00d4ff
 }
 
+.menu-toggle{
+    display: none;
+}
 @media screen and (max-width:768px){
      header{
       box-sizing: border-box;
@@ -393,6 +396,7 @@ footer a{
      }
       
      .menu-toggle {
+        display: inline;
         font-size: 35px;
         background: transparent;
         border: none;
@@ -450,5 +454,70 @@ footer a{
      .select_button button{
         width: 44%;
      }
+    
+     h1{
+        margin-top: 50px;
+        font-size: 35px;
+     }
 
+     #about img{
+        display: none;
+     }
+     
+     #about .content p{
+        font-size:1.1rem ;
+     }
+    #btn{
+        margin-top: 280px;
+        width: 40%;
+    }
+
+    #skills h2{
+        font-size: 1.4rem;
+    }
+
+    #skills>.container-3{
+        gap:40px;
+    }
+
+    #skills .skill-card{
+        width: 135px;
+    }
+    
+    .project-flex{
+        flex-direction: column;
+        gap:30px;
+    }
+    .project-flex .proj-card{
+        width: 85vw;
+        height: 50vh;
+    }
+
+    #projects{
+        height: 170vh;
+    }
+     
+    .contact-container img{
+        display: none;
+    }
+     
+    form{
+        width: 100vw;
+    }
+    #contact{
+        height: 60vh;
+    }
+
+    #contact h1{
+        margin-top: 0;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: left;
+    }
+
+    footer a{
+        text-align: end;
+    }
 }
