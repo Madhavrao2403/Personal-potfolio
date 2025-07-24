@@ -8,214 +8,499 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
-    <!-- Includes nav bar with transparent background -->
+<body id="tsparticles">
     <header>
-        <div class="logo">
-            <h2>Portfolio.</h2>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#" class="nav-button"><span class="fa fa-home"></span> Home</a></li>
-                    <li><a href="#about" class="nav-button"><span class="fa fa-user"></span> About me</a></li>
-                    <li><a href="#skills" class="nav-button"><span class="fa fa-cogs"></span> Skills</a></li>
-                    <li><a href="#projects" class="nav-button"><span class="fa fa-project-diagram"></span> Projects</a></li>
-                    <li><a href="#contact" class="nav-button"><span class="fa fa-envelope"></span> Contact me</a></li>
-                </ul>               
-            </nav>
-            <details>
-                <summary><i class="fas fa-bars"></i></summary>
-            </details>
-            
-        </div>
+        <nav class="navbar navbar-expand-lg mt-2">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white fw-bold fs-3 ms-3" href="#">Portfolio.</a>
+
+                <button class="navbar-toggler text-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "><i class="fas fa-bars text-white"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarnav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item me-4"><a class="nav-link text-white" href="#home"><span
+                                    class="fa fa-home d-none d-lg-inline"></span> Home</a></li>
+                        <li class="nav-item me-4"><a class="nav-link text-white" href="#about"><span
+                                    class="fa fa-user d-none d-lg-inline"></span> About me</a></li>
+                        <li class="nav-item me-4"><a class="nav-link text-white" href="#skills"><span
+                                    class="fa fa-cogs d-none d-lg-inline"></span> Skills</a></li>
+                        <li class="nav-item me-4"><a class="nav-link text-white" href="#project"><span
+                                    class="fa fa-project-diagram d-none d-lg-inline"></span> Projects</a></li>
+                        <li class="nav-item me-4"><a class="nav-link text-white" href="#contact"><span
+                                    class="fa fa-envelope d-none d-lg-inline"></span> Contact me</a></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- The content such as images and about me and the decription -->
     <main>
-        <section id="home">
-            <div class="left">
-                <p>student</p>
-                <h2 >Hello I'm</h2>
-                <h1>Peddinti Madhav Rao</h1>
-                <p>I am a passionate learner and aspiring full-stack developer, currently pursuing a Computer Science
-                    degree with a focus on Data Science. I am dedicated to expanding my knowledge and building practical
-                    projects to grow as a software developer.</p>
-                <div class="links">
-                    <a href="https://www.linkedin.com/in/peddinti-madhav-rao-2647782b4/" target="_blank"><svg
-                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
-                            viewBox="0 0 50 50" style="fill:#00d4ff;">
-                            <path
-                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
-                            </path>
-                        </svg></a>
+        <div class="container-fluid px-4" id="home" data-aos="fade-up" data-aos-duration="2000">
+            <div class="py-md-5 intro">
+                <div class="left ">
+                    <p class="text-white fs-md-5">student</p>
+                    <h2 class="fw-bold line"><span class="text" id="text1"></span><span class="cursor"
+                            id="cursor1">|</span></h2>
+                    <h1 class="text-white fw-bold line"><span class="text" id="text2"></span><span class="cursor"
+                            id="cursor2">|</span></h1>
+                    <p class="text-white">I am a passionate learner and aspiring full-stack developer, currently
+                        pursuing a Computer Science
+                        degree with a focus on Data Science. I am dedicated to expanding my knowledge and building
+                        practical
+                        projects to grow as a software developer.</p>
+                    <div class="links mb-3">
+                        <a href="https://www.linkedin.com/in/peddinti-madhav-rao-2647782b4/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 50 50" style="fill:#00d4ff;">
+                                <path
+                                    d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z">
+                                </path>
+                            </svg></a>
 
-                    <a href="https://github.com/Madhavrao2403" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
-                            x="0px" y="0px" width="50" height="50" viewBox="0 0 64 64" style="fill:#00d4ff;">
-                            <path
-                                d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
-                            </path>
-                        </svg></a>
-                    <a href="https://x.com/Saimadhav529314?t=ib0cizgCvCgGKJzprIfjiQ&s=09" target="_blank"><svg
-                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
-                            viewBox="0 0 50 50" style="fill:#00d4ff;">
-                            <path
-                                d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
-                            </path>
-                        </svg></a>
-                    <a href="https://www.instagram.com/saimadhav_/?hl=en" target="_blank"><svg
-                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
-                            viewBox="0 0 50 50" style="fill:#00d4ff;">
-                            <path
-                                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
-                            </path>
-                        </svg></a>
+                        <a href="https://github.com/Madhavrao2403" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 64 64" style="fill:#00d4ff;">
+                                <path
+                                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z">
+                                </path>
+                            </svg></a>
+                        <a href="https://x.com/Saimadhav529314?t=ib0cizgCvCgGKJzprIfjiQ&s=09" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 50 50" style="fill:#00d4ff;">
+                                <path
+                                    d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z">
+                                </path>
+                            </svg></a>
+                        <a href="https://www.instagram.com/saimadhav_/?hl=en" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                viewBox="0 0 50 50" style="fill:#00d4ff;">
+                                <path
+                                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z">
+                                </path>
+                            </svg></a>
+                    </div>
+
+                    <div class="select_button">
+                        <button class="btns"
+                            onclick="window.location.href='https://drive.google.com/file/d/187ebyyryOOnXBJgyu3AOX-68MAvJmDq5/view?usp=sharing'">
+                            Resume
+                        </button>
+
+                        <button class="btns" onclick="window.location.href='mailto:smadhav426@gmail.com'">
+                            Hire me
+                        </button>
+                    </div>
                 </div>
 
-                <div class="select_button">
-                    <button
-                        onclick="window.location.href='https://drive.google.com/file/d/187ebyyryOOnXBJgyu3AOX-68MAvJmDq5/view?usp=sharing'">
-                        Resume
-                    </button>
-
-                    <button onclick="window.location.href='mailto:smadhav426@gmail.com'">
-                        Hire me
-                    </button>
-                </div>
-            </div>
-
-            <div class="right">
-                <img src="assets/madhav image.jpg" alt="Profile" id="profile_img">
-            </div>
-
-        </section>
-
-        <section id="about">
-            <h1>About <b>Me</b></h1>
-            <div class="content">
-                <img src="assets/madhav bg.png" alt="transparent img">
-                <p>
-                    Hi, I'm Madhav Rao, a passionate and curious Computer Science Engineering student specializing in
-                    Data Science. I enjoy solving problems, thinking analytically, and exploring innovative ideas that
-                    can make a real-world impact. <br>
-                    Driven by a strong desire to learn and grow, I continuously push myself to improve, whether it's
-                    through logical problem-solving, creative thinking, or collaborating on exciting challenges. My goal
-                    is to build a career where I can contribute meaningfully, embrace new opportunities, and make a
-                    difference through technology. <br>
-                    Outside of coding, I love exploring new concepts, staying updated with industry trends, and engaging
-                    with like-minded individuals who share the same enthusiasm for innovation. <br>
-                    Let's connect and create something great together &#128640;!
-                </p>
-            </div>
-            <button id="btn">more</button>
-        </section>
-
-        <section id="skills">
-            <h1>Skills</h1>
-            <h2>Programming Languages</h2>
-            <div class="container-3 programming">
-                <div class="skill-card" title="java">
-                    <img src="assets/java.svg" alt="java" height="140">
-                </div>
-                <div class="skill-card" title="python">
-                    <img src="assets/python.svg" alt="python">
+                <div class="right">
+                    <div class="rotate-border">
+                        <img src="assets/madhav image.jpg" class="img-fluid" alt="Profile" id="profile_img">
+                    </div>
                 </div>
             </div>
-            <h2>Web Technologies</h2>
-            <div class="container-3">
-                <div class="skill-card" title="html">
-                    <img src="assets/html.svg" alt="html" height="140">
-                </div>
+        </div>
 
-                <div class="skill-card" title="css">
-                    <img src="assets/css.svg" alt="css" height="140">
+        <div class="container-fluid px-4 mt-4" id="about">
+            <h1 class="text-center text-white mb-3 style-h">About <b>Me</b></h1>
+            <div class="row">
+                <div class="d-none d-lg-block col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="assets/about.png" alt="">
                 </div>
-            </div>
-            <h2>Tools and Platforms</h2>
-            <div class="container-3">
-                <div class="skill-card" title="git">
-                    <img src="assets/git.svg" alt="git" height="140">
-                </div>
-
-                <div class="skill-card" title="github">
-                    <img src="assets/github.svg" alt="github" height="140">
-                </div>
-
-                <div class="skill-card" title="vs code">
-                    <img src="assets/vscode.svg" alt="vs code" height="140">
-                </div>
-
-            </div>
-        </section>
-
-        <section id="projects">
-            <h1>Projects</h1>
-            <div class="project-flex">
-                <div class="proj-card">
-                    <img src="assets/chatbot.png" alt="project-1">
-                    <h2>AI ChatBot using Python</h2>
-                    <p>
-                        This is one of the project of LLM Chatbot,did with python language and used libraries like
-                        streamlit and openai.
+                <div class="col-12 col-lg-6 d-flex flex-column" data-aos="fade-left" data-aos-duration="2000">
+                    <p class="text-white" style="text-align: justify;">
+                        Hi, I'm Madhav Rao, a passionate and curious Computer Science Engineering student specializing
+                        in
+                        Data Science. I enjoy solving problems, thinking analytically, and exploring innovative ideas
+                        that
+                        can make a real-world impact. <br>
+                        Driven by a strong desire to learn and grow, I continuously push myself to improve, whether it's
+                        through logical problem-solving, creative thinking, or collaborating on exciting challenges. My
+                        goal
+                        is to build a career where I can contribute meaningfully, embrace new opportunities, and make a
+                        difference through technology. <br>
+                        Outside of coding, I love exploring new concepts, staying updated with industry trends, and
+                        engaging
+                        with like-minded individuals who share the same enthusiasm for innovation. <br>
+                        Let's connect and create something great together &#128640;!
                     </p>
-                    <a href="https://github.com/Madhavrao2403/AI-chatbot-using-python" target="_blank">see more</a>
-                </div>
-                <div class="proj-card">
-                    <img src="assets/calculator.png" alt="project-1">
-                    <h2>Calculator App using Python</h2>
-                    <p>
-                        Calculator App is basic app,that use to calculate the Basic Arthimetic opertions and it is build
-                        with Tkinter library.
-                    </p>
-                    <a href="https://github.com/Madhavrao2403/Python-GUI-mini-projects" target="_blank">see more</a>
-                </div>
-                <div class="proj-card">
-                    <img src="https://browserhow.com/wp-content/uploads/sites/3/Leftward_Arrow_icon_for_Backward_navigation_in_Chrome_Computer.png"
-                        alt="project-1">
-                    <h2>Browser Navigation System</h2>
-                    <p>
-                        It is a command-line project,where user can navigate to different tabs and the logic behind i
-                        used is Doble Linked list Data structure in java.
-                    </p>
-                    <a href="https://github.com/Madhavrao2403/Python-GUI-mini-projects" target="_blank">see more</a>
+                    <button class="btns text-center w-50 align-self-center"
+                        onclick="window.location.href='https://www.linkedin.com/in/peddinti-madhav-rao-2647782b4/'">More</button>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
 
-        <section id="contact">
-            <div class="contact-container">
-                <img src="assets/connectme.png" alt="connect image">
-                <form action="#" method="post">
-                    <h1>Contact <b>me</b></h1>
-                    <div class="input-group">
-                        <label for="uname">Name</label>
-                        <input type="text" id="uname" name="user_name" placeholder="Enter your name" required>
+        <div class="container-fluid px-4 mt-4" id="skills">
+            <h1 class="text-center text-white mb-3 style-h"><b>My</b> Skills</h1>
+            <div class="row g-3">
+                <h2 class="text-white mb-3">Programming Languages</h2>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/java.svg" alt="java" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Java</h5>
+                                <a href="https://www.java.com/en/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="uemail">Email Address</label>
-                        <input type="email" id="uemail" name="user_mail" placeholder="Enter your Email" required>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/python.svg" alt="python" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Python</h5>
+                                <a href="https://www.python.org" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <label for="comment">comment</label>
-                        <textarea name="user_message" id="comment" placeholder="Enter Message" required></textarea>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/php.svg" alt="php" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Php (Basic)</h5>
+                                <a href="https://www.php.net/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-group">
-                       <input type="submit" onclick="alert('Sorry,This is just static page')"> 
-                    </div>
-                </form>
+                </div>
             </div>
-        </section>
+            <div class="row g-3 mt-3">
+                <h2 class="text-white mb-3">Frontend Technologies</h2>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/html.svg" alt="html" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">HTML</h5>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/css.svg" alt="css" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">CSS</h5>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/javascript.svg" alt="javascript" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Javascript</h5>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/bootstrap.svg" alt="bootstrap" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Bootstrap</h5>
+                                <a href="https://getbootstrap.com/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="1200">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/react.svg" alt="react" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Reactjs</h5>
+                                <a href="https://react.dev/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3">
+                <h2 class="text-white mb-3">Databases</h2>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/mysql.svg" alt="mysql" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">MYSQL</h5>
+                                <a href="https://www.mysql.com/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3">
+                <h2 class="text-white mb-3">Tools & Platforms</h2>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/git.svg" alt="git" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Git</h5>
+                                <a href="https://git-scm.com/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/github.svg" alt="github" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">GitHub</h5>
+                                <a href="https://docs.github.com/en" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/vscode.svg" alt="vs code" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">VsCode</h5>
+                                <a href="https://code.visualstudio.com/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 mt-3">
+                <h2 class="text-white mb-3">Deployment & Hosting</h2>
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/netlify.svg" alt="netlify" class="card-img-top align-self-center">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Netlify</h5>
+                                <a href="https://www.netlify.com/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glow-border">
+                        <div class="card pt-2 px-2">
+                            <img src="assets/vercel.svg" alt="vercel" class="card-img-top align-self-center mt-3">
+                            <div class="card-body mt-2">
+                                <h5 class="card-title text-white">Vercel</h5>
+                                <a href="https://vercel.com/" target="_blank"
+                                    class="text-warning text-decoration-none">source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of skills -->
+        <div class="container-fluid px-4 mt-4">
+            <h1 class="text-center text-white mb-3 style-h">Coding <b>Profiles</b></h1>
+
+            <div class="card border-3 border-warning w-100 p-3 mt-3" data-aos="fade-right" data-aos-delay="0">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/LeetCode_Logo_black_with_text.svg"
+                    class="card-img-top img-fluid coding-logo" alt="leetcode">
+                <div class="card-body">
+                    <div id="leetcode-section"></div>
+                </div>
+            </div>
+
+            <div class="card border-3 border-light w-100 p-3 mt-3" data-aos="fade-left" data-aos-delay="1000">
+                <img src="assets/hackerrank.png" class="card-img-top img-fluid coding-logo" alt="leetcode">
+                <div class="card-body">
+                    <div id="hackerrank-section"></div>
+                </div>
+            </div>
+
+            <div class="card border-3 border-success w-100 p-3 mt-3" data-aos="fade-right" data-aos-delay="1000">
+                <div class="d-flex align-items-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg"
+                        class="card-img-top coding-logo img-fluid gfg-icon" alt="gfg logo"><span
+                        class="text-white fs-2 fw-bolder mx-3">GeeksforGeeks</span>
+                </div>
+                <div class="card-body">
+                    <div id="gfg-section" class="row"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End of coding profiles -->
+        <div class="container-fluid px-4 mt-4" id="project">
+            <h1 class="text-center text-white mb-3 style-h"><b>Projects</b></h1>
+
+            <!-- Use g-4 for spacing between cards -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="card video-card h-100">
+                        <video class="card-img-top video-preview w-100" poster="assets/thumbnai.png" muted loop
+                            preload="none">
+                            <source src="assets/netflix-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">Netflix-clone Website</h5>
+                            <div class="d-flex flex-wrap gap-2 align-items-center mt-2">
+                                <div class="tech-tag"><i class="fab fa-html5" style="color: orange;"></i><span
+                                        class="ms-2">HTML</span></div>
+                                <div class="tech-tag"><i class="fab fa-css3-alt" style="color: blue;"></i><span
+                                        class="ms-2">CSS</span></div>
+                            </div>
+                            <p class="card-text text-white fs-6 mt-3">
+                                A responsive Netflix clone homepage built using only HTML and CSS, featuring modern UI
+                                design and smooth layout.
+                            </p>
+                            <div class="text-center mt-2">
+                                <a href="https://github.com/Madhavrao2403/Netflix-clone-website"
+                                    class="link link-info fw-bold fs-6 text-decoration-none">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="card video-card h-100">
+                        <video class="card-img-top video-preview w-100" poster="assets/calculator.png" muted loop
+                            preload="none">
+                            <source src="assets/cal-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">Calculator Application (Tkinter)</h5>
+                            <div class="d-flex flex-wrap gap-2 align-items-center mt-2">
+                                <div class="tech-tag"><i class="fab fa-python" style="color: #306998;"></i><span
+                                        class="ms-2">Python</span></div>
+                            </div>
+                            <p class="card-text text-white fs-6 mt-3">
+                                A modern dark-themed calculator app with a clean layout and functional buttons using
+                                Tkinter.
+                            </p>
+                            <div class="text-center mt-2">
+                                <a href="https://github.com/Madhavrao2403/Python-GUI-mini-projects/blob/main/CalculatorGUI.py"
+                                    class="link link-info fw-bold fs-6 text-decoration-none">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="card video-card h-100">
+                        <video class="card-img-top video-preview w-100" poster="assets/preview.png.png" muted loop
+                            preload="none">
+                            <source src="assets/todo-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title text-white fw-bold">To Do List</h5>
+                            <div class="d-flex flex-wrap gap-2 align-items-center mt-2">
+                                <div class="tech-tag"><i class="fab fa-html5" style="color: orange;"></i><span
+                                        class="ms-2">HTML</span></div>
+                                <div class="tech-tag"><i class="fab fa-css3-alt" style="color: blue;"></i><span
+                                        class="ms-2">CSS</span></div>
+                                <div class="tech-tag"><i class="fab fa-js" style="color: #f7df1e;"></i><span
+                                        class="ms-2">JavaScript</span></div>
+                            </div>
+                            <p class="card-text text-white fs-6 mt-3">
+                                A visually clean To-Do List app built with HTML, CSS, and JavaScript that lets users add
+                                tasks with deadlines and view them.
+                            </p>
+                            <div class="text-center mt-2">
+                                <a href="https://github.com/Madhavrao2403/ToDo-list"
+                                    class="link link-info fw-bold fs-6 text-decoration-none">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Me -->
+        <div class="container-fluid px-4 mt-5" id="contact">
+            <div class="row">
+                <div class="col-12 col-md-6 d-none d-md-block">
+                    <img src="assets/connectme.png" alt="coonect_img" class="w-100">
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <form action="#" method="post" id="msgform">
+                        <h1 class="text-center text-white mb-3 style-h"><b>Connect</b> Me</h1>
+                        <div class="input-group mt-3">
+                            <label for="uname">Name</label>
+                            <input type="text" id="uname" name="user_name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-group mt-3">
+                            <label for="uemail">Email Address</label>
+                            <input type="email" id="uemail" name="user_mail" placeholder="Enter your Email" required>
+                        </div>
+                        <div class="input-group mt-3">
+                            <label for="comment">comment</label>
+                            <textarea name="user_message" id="comment" placeholder="Enter Message" required></textarea>
+                        </div>
+                        <div class="input-group mt-4 d-flex justify-content-center">
+                            <button class="btns w-50" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
-    <!-- connect me -->
+
     <footer>
-          <p>&copy; 2025 Madhav Rao. All rights reserved.</p>
-           <p>&#x2709; Mail:<a href="mailto:smadhav426@gmail.com"> smadhav426@gmail.com</a></p>
-           <p>&#9742; Phn:<a href="tel:+9849905034"> 9849905034</a></p>
-          <a href="#home">&lt; Back to top</a>
+        <p>&copy; 2025 Madhav Rao. All rights reserved.</p>
+        <p>&#x2709; Mail:<a href="mailto:smadhav426@gmail.com"> smadhav426@gmail.com</a></p>
+        <p>&#9742; Phn:<a href="tel:+9849905034"> 9849905034</a></p>
+        <a href="#home">&lt; Back to top</a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+    <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>

@@ -1,0 +1,20 @@
+{
+  "name": "personal-potfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my personal portfolio website! This project is built using HTML and CSS to showcase my skills, projects, and experiences in a clean, user-friendly layout.",
+  "main": "Badges.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madhavrao2403/Personal-potfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madhavrao2403/Personal-potfolio/issues"
+  },
+  "homepage": "https://github.com/Madhavrao2403/Personal-potfolio#readme"
+}
