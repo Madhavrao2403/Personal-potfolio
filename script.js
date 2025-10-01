@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
     AOS.init({ duration: 800, once: true })
 })
 
-let username = 'Saimadhav2005';
+let username = 'Madhav2403';
 let body = document.getElementById('leetcode-section');
 
 fetch(`https://leetcode-stats-api.herokuapp.com/${username}`).then((res) => res.json()).then((data) => {
@@ -134,7 +134,7 @@ fetch(`https://leetcode-stats-api.herokuapp.com/${username}`).then((res) => res.
 });
 
 let body2 = document.getElementById('hackerrank-section')
-let username1 = "Madhav2403"
+let username1 = "smadhav426"
 body2.innerHTML = `
 <div class="text-white text-center my-3">
  <div class = "spinner-border text-light" role="status"></div>
